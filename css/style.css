@@ -1,0 +1,247 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Afacad Flux", system-ui;
+}
+
+.container {
+    width: 80%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #0F2620;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: #7BA69A;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #A6444C;
+}
+
+.btn-light {
+    color: black;
+    background-color: #DDF2CE;
+}
+
+.btn-dark {
+    color: white;
+    background-color: #584432;
+}
+
+/* Header */
+.bg_header {
+    background-image: url('../assets/img/bg-header-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 18.75em;
+}
+
+.bg_navbar {
+    background-color: rgba(0, 0, 0, 0.534);
+    padding: 1.5em 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navbar_brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+    .navbar_brand {
+        flex-direction: row;
+        margin-bottom: 0em;
+    }
+}
+
+.navbar_brand img {
+    width: 2em;
+}
+
+.navbar_nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1em;
+    border-radius: 0.3em;
+}
+
+.nav_link {
+    display: inline-block;
+    padding: 0.3em;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+}
+
+.nav_link:hover {
+    background-color: white;
+    color: black;
+    border-radius: 0.5em;
+}
+
+/* Main */
+.container_main {
+    margin-top: -2em;
+    background-color: rgb(243, 238, 238);
+    padding: 1em;
+    border-radius: 0.3em;
+}
+
+.main_title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .tienda {
+        display: flex;
+        gap: 1em;
+    }
+}
+
+/* Card*/
+
+.card {
+    background-color: #A6444C;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-weight: 500;
+}
+
+.card-body p {
+    font-weight: 200;
+}
+
+/* nosotros */
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: #0F2620;
+}
+
+.nosotros_col_img {
+    background-image: url('../assets/img/nosotros-min.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 21.875em;
+    width: 100%;
+    order: 2;
+}
+
+
+
+.nosotros_col_text {
+    order: 1;
+}
+
+@media (min-width: 576px) {
+    .nosotros_col_img {
+        height: 31.25em;
+    }
+}
+
+@media (min-width: 768px) {
+    .nosotros {
+        flex-direction: row;
+    }
+
+    .nosotros_col_img {
+        order: 1;
+        flex: 1 1 0;
+    }
+
+    .nosotros_col_text {
+        order: 2;
+        flex: 1 1 0;
+    }
+}
+
+.nosotros_body {
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.nosotros_body h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+.nosotros_body p {
+    font-weight: 200;
+}
+
+/* Footer */
+
+.bg_footer {
+    background-color: #0F2620;
+    color: white;
+}
+
+.bg_footer p {
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
